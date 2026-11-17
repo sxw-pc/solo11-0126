@@ -1,0 +1,13 @@
+{
+  "case_id": "parcel-1",
+  "source_id": "plan-1",
+  "at": "2026-06-01T08:00:00Z",
+  "facts": {
+    "parcel": "P-1",
+    "boundary_overlap": true,
+    "old_use": "housing",
+    "new_use": "retail",
+    "rights_conflict": false,
+    "owner": "O1"
+  }
+}
