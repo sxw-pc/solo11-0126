@@ -1,0 +1,7 @@
+{
+  "source_id": "survey-north", "revision": 1,
+  "sheets": [
+    {"sheet_id": "north-ab", "tile_id": "tile-1", "from": "A", "to": "B", "low": -0.1, "high": 0.1, "remeasure_cost": 1},
+    {"sheet_id": "north-bc", "tile_id": "tile-2", "from": "B", "to": "C", "low": -0.1, "high": 0.1, "remeasure_cost": 1}
+  ]
+}

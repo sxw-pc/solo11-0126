@@ -1,0 +1,16 @@
+{
+  "case_id": "parcel-1",
+  "at": "2026-06-03T00:00:00Z",
+  "receipts": [
+    {
+      "event_key": "intake-late",
+      "target": "O1",
+      "at": "2026-06-02T12:00:00Z",
+      "version": 1,
+      "amount": 1,
+      "parcel": "P-1",
+      "round": "R1",
+      "signed_digest": "digest-2"
+    }
+  ]
+}
