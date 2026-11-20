@@ -1,0 +1,6 @@
+{
+  "source_id": "roll-bing", "revision": 1,
+  "sheets": [
+    {"sheet_id": "bing-ac", "tile_id": "tile-4", "from": "A", "to": "C", "low": 100, "high": 100, "remeasure_cost": 1}
+  ]
+}

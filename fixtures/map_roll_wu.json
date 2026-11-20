@@ -1,0 +1,6 @@
+{
+  "source_id": "roll-wu", "revision": 1,
+  "sheets": [
+    {"sheet_id": "wu-df", "tile_id": "tile-6", "from": "D", "to": "F", "low": 100, "high": 100, "remeasure_cost": 1}
+  ]
+}

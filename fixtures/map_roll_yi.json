@@ -1,0 +1,6 @@
+{
+  "source_id": "roll-yi", "revision": 1,
+  "sheets": [
+    {"sheet_id": "yi-bc", "tile_id": "tile-3", "from": "B", "to": "C", "low": 0, "high": 0, "remeasure_cost": 2}
+  ]
+}

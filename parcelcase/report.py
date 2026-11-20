@@ -28,9 +28,18 @@ def report(db_path,out=None):
                for name in EXTRA_TABLES if db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name=?",(name,)).fetchone()}
     auxiliary["map_source"]=[dict(x) for x in db.execute("SELECT source_id,revision,digest FROM map_source ORDER BY source_id,revision")]
     auxiliary["map_sheet"]=[dict(x) for x in db.execute("SELECT * FROM map_sheet ORDER BY source_id,revision,sheet_id")]
+    map_reviews=[]
+    for x in db.execute("SELECT * FROM map_review ORDER BY id"):
+        detail=json.loads(x["detail"])
+        map_reviews.append({"id":x["id"],"created_at":x["created_at"],"sources":json.loads(x["sources"]),
+                            "consistent":bool(x["consistent"]),"contradictions":detail["contradictions"],
+                            "plans":detail["plans"],"map_status":detail["map_status"]})
+    map_orders=[]
+    for x in db.execute("SELECT * FROM map_order ORDER BY id"):
+        map_orders.append({"id":x["id"],"created_at":x["created_at"],**json.loads(x["detail"])})
     db.close()
     result={"notices":notices,"cases":cases,"source_evidence":evidence,"source_conflicts":conflicts,
-            "auxiliary":auxiliary}
+            "auxiliary":auxiliary,"map_reviews":map_reviews,"map_orders":map_orders}
     if out:
         target=Path(out);target.parent.mkdir(parents=True,exist_ok=True)
         temp=target.with_name(target.name+".pending")

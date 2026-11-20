@@ -1,0 +1,7 @@
+{
+  "source_id": "roll-jia", "revision": 1,
+  "sheets": [
+    {"sheet_id": "jia-ab", "tile_id": "tile-1", "from": "A", "to": "B", "low": 0, "high": 0, "remeasure_cost": 1},
+    {"sheet_id": "jia-de", "tile_id": "tile-2", "from": "D", "to": "E", "low": 0, "high": 0, "remeasure_cost": 1}
+  ]
+}
